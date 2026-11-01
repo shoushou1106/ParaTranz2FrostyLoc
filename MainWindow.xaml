@@ -1,0 +1,30 @@
+﻿<Window x:Class="ParaTranz2FrostyLoc.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ParaTranz2FrostyLoc"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="0.5*"/>
+        </Grid.RowDefinitions>
+        <StackPanel>
+            <WrapPanel Grid.Row="0" Margin="2">
+                <Button Content="Import Histogram Chunk" Click="HistogramChunkImport_Click" Margin="2"/>
+                <Button Content="Import String Binary Chunk" Click="StringBinaryChunkImport_Click" Margin="2"/>
+                <Button Content="Import ParaTranz json" Click="ParatranzJsonImport_Click" Margin="2"/>
+                <Button Content="CHT to CHS" Click="CHT2CHS_Click" Margin="2"/>
+                <Button Content="Show unsupport chars" Click="ShowUnsupportChars_Click" Margin="2"/>
+                <Button Content="Export Chunks" Click="ExportChunk_Click" Margin="2"/>
+                <Button Content="Test 1" Click="Test1_Click" Margin="2"/>
+                <Button Content="Test 2" Click="Test2_Click" Margin="2"/>
+                <Button Content="Test 3" Click="Test3_Click" Margin="2"/>
+            </WrapPanel>
+            <TextBox x:Name="TextBoxTest1" Margin="2"/>
+        </StackPanel>
+        <TextBox x:Name="LogTextBox" Grid.Row="1" Margin="2" IsReadOnly="True"/>
+    </Grid>
+</Window>
